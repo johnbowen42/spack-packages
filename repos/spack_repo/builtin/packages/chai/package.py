@@ -245,8 +245,8 @@ class Chai(CachedCMakePackage, CudaPackage, ROCmPackage):
     with when("+raja"):
         depends_on("raja~openmp", when="~openmp")
         depends_on("raja+openmp", when="+openmp")
-        depends_on("raja@2026.07.0", when="@2026.07.0")
         depends_on("raja@2026.07.1:", when="@2026.07.1:")
+        depends_on("raja@2026.07.0", when="@2026.07.0")
         depends_on("raja@2025.12", when="@2025.12.0")
         depends_on("raja@2025.09", when="@2025.09.0")
         depends_on("raja@2025.03.2", when="@2025.03.1")
