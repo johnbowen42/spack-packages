@@ -311,7 +311,7 @@ class Umpire(CachedCMakePackage, CudaPackage, ROCmPackage):
     depends_on("camp~cuda", when="~cuda")
     depends_on("camp~rocm", when="~rocm")
     depends_on("camp@2026.07.2:", when="@2026.07.2:")
-    depends_on("camp@2026.07.1:", when="@2026.07.0:2026.07.1")
+    depends_on("camp@2026.07.1", when="@2026.07.0:2026.07.1")
     depends_on("camp@2025.12", when="@2025.12")
     depends_on("camp@2025.09", when="@2025.09")
     depends_on("camp@2025.03", when="@2025.03")
